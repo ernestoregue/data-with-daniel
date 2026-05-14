@@ -9,8 +9,8 @@
 
     <!-- FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
-		rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="assets/css/main.css">
 
@@ -18,80 +18,94 @@
 
 <body>
 
+    <!-- MOBILE NAV -->
+
+    <header class="mobile-nav">
+
+        <h1>
+            Daniel Núñez
+        </h1>
+
+        <button id="menu-toggle">
+            ☰
+        </button>
+
+    </header>
+
     <!-- SIDEBAR -->
 
-	<aside class="sidebar">
+    <aside class="sidebar" id="sidebar">
 
-		<div>
+        <div>
 
-			<h1 class="logo">
-				Daniel Núñez
-			</h1>
+            <h1 class="logo">
+                Daniel Núñez
+            </h1>
 
-			<!-- MAIN NAV -->
+            <!-- MAIN NAV -->
 
-			<nav class="sidebar-section">
+            <nav class="sidebar-section">
 
-				<h2>Navigation</h2>
+                <h2>Navigation</h2>
 
-				<a href="./index.html">Home</a>
-				<a href="./about.html">About</a>
-				<a href="./projects.html">Projects</a>
-				<a href="./contact.html">Contact</a>
+                <a href="./index.html">Home</a>
+                <a href="./about.html">About</a>
+                <a href="./projects.html">Projects</a>
+                <a href="./contact.html">Contact</a>
 
-			</nav>
+            </nav>
 
-			<!-- EXPERIENCE -->
+            <!-- EXPERIENCE -->
 
-			<nav class="sidebar-section">
+            <nav class="sidebar-section">
 
-				<h2>Experience</h2>
+                <h2>Experience</h2>
 
-				<a href="./experience/krannich-solar.html">
-					Krannich Solar México
-				</a>
+                <a href="./experience/krannich-solar.html">
+                    Krannich Solar México
+                </a>
 
-				<a href="./experience/siguiente-reto.html">
-					Siguiente Reto
-				</a>
+                <a href="./experience/siguiente-reto.html">
+                    Siguiente Reto
+                </a>
 
-			</nav>
+            </nav>
 
-			<!-- EDUCATION & CERTIFICATIONS -->
+            <!-- EDUCATION & CERTIFICATIONS -->
 
-			<nav class="sidebar-section">
-				<h2>Education & Certifications</h2>
+            <nav class="sidebar-section">
+                <h2>Education & Certifications</h2>
 
-				<a href="https://www.escom.ipn.mx/" target="_blank">
-					ESCOM - Instituto Politécnico Nacional
-				</a>
+                <a href="https://www.escom.ipn.mx/" target="_blank">
+                    ESCOM - Instituto Politécnico Nacional
+                </a>
 
-				<a href="https://app.educasign.ai/validation/d763738c-486c-4e0c-a6cb-ba794ced304d" target="_blank">
-					Data Analytics diplomate
-				</a>
+                <a href="https://app.educasign.ai/validation/d763738c-486c-4e0c-a6cb-ba794ced304d" target="_blank">
+                    Data Analytics diplomate
+                </a>
 
-				<a href="https://app.educasign.ai/validation/ccb0f1be-573b-49ce-a224-c91d70f931ac" target="_blank">
-					Business Analyst diplomate
-				</a>
+                <a href="https://app.educasign.ai/validation/ccb0f1be-573b-49ce-a224-c91d70f931ac" target="_blank">
+                    Business Analyst diplomate
+                </a>
 
-				<a href="../assets/documents/AZ-900_Certificate.pdf" target="_blank">
-					AZ-900: Microsoft Azure Fundamentals
-				</a>
+                <a href="../assets/documents/AZ-900_Certificate.pdf" target="_blank">
+                    AZ-900: Microsoft Azure Fundamentals
+                </a>
 
-			</nav>
+            </nav>
 
-			<!-- CV -->
+            <!-- CV -->
 
-			<nav class="sidebar-section">
-				<h2>CV</h2>
+            <nav class="sidebar-section">
+                <h2>CV</h2>
 
-				<a href="../assets/documents/CV_DANIEL.pdf" target="_blank">
-					Download CV
-				</a>
-			</nav>
-		</div>
+                <a href="../assets/documents/CV_DANIEL.pdf" target="_blank">
+                    Download CV
+                </a>
+            </nav>
+        </div>
 
-	</aside>
+    </aside>
 
     <!-- CONTENT -->
 
@@ -334,6 +348,19 @@
 
     </main>
 
+    <script>
+
+        const menuToggle = document.getElementById('menu-toggle');
+        const sidebar = document.getElementById('sidebar');
+
+        menuToggle.addEventListener('click', () => {
+
+            sidebar.classList.toggle('active');
+
+        });
+
+    </script>
+    
 </body>
 
 </html>

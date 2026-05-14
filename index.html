@@ -19,9 +19,22 @@
 
 <body>
 
+	<!-- MOBILE NAV -->
+
+	<header class="mobile-nav">
+
+		<h1>
+			Daniel Núñez
+		</h1>
+
+		<button id="menu-toggle">
+			☰
+		</button>
+
+	</header>
 	<!-- SIDEBAR -->
 
-	<aside class="sidebar">
+	<aside class="sidebar" id="sidebar">
 
 		<div>
 
@@ -142,7 +155,8 @@
 
 			<a class="project-card" href="experience/krannich-solar.html">
 
-				<img src="https://krannich-solar.com/fileadmin/user_upload/global/Company/References/small_banner_references_1652x568.png" alt="Krannich Solar">
+				<img src="https://krannich-solar.com/fileadmin/user_upload/global/Company/References/small_banner_references_1652x568.png"
+					alt="Krannich Solar">
 
 				<div class="project-info">
 
@@ -217,6 +231,19 @@
 		</section>
 
 	</main>
+
+	<script>
+
+		const menuToggle = document.getElementById('menu-toggle');
+		const sidebar = document.getElementById('sidebar');
+
+		menuToggle.addEventListener('click', () => {
+
+			sidebar.classList.toggle('active');
+
+		});
+
+	</script>
 
 </body>
 
