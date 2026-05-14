@@ -1,0 +1,300 @@
+/* =========================
+   HOME PAGE
+========================= */
+
+/* HERO */
+
+.hero{
+    position:relative;
+    overflow:hidden;
+}
+
+.hero img{
+    transform:scale(1.02);
+    transition:transform 8s ease;
+}
+
+.hero:hover img{
+    transform:scale(1.08);
+}
+
+.hero-overlay{
+    background:linear-gradient(
+        to top,
+        rgba(0,0,0,0.92),
+        rgba(0,0,0,0.25)
+    );
+}
+
+/* HERO CONTENT */
+
+.hero-content{
+    animation:fadeUp 1.2s ease;
+}
+
+.hero-label{
+    color:rgba(255,255,255,0.7);
+    border:1px solid rgba(255,255,255,0.12);
+    padding:10px 16px;
+    border-radius:999px;
+    backdrop-filter:blur(10px);
+    background:rgba(255,255,255,0.03);
+}
+
+.hero-content h2{
+    max-width:900px;
+    letter-spacing:-2px;
+}
+
+.hero-content p{
+    max-width:720px;
+}
+
+/* HERO GLOW */
+
+.hero::after{
+    content:"";
+    position:absolute;
+    width:600px;
+    height:600px;
+    border-radius:50%;
+    background:rgba(255,255,255,0.03);
+    filter:blur(120px);
+
+    top:-150px;
+    right:-150px;
+}
+
+/* FEATURED SECTION */
+
+.featured{
+    position:relative;
+}
+
+.featured::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    pointer-events:none;
+    background:
+        linear-gradient(
+            rgba(255,255,255,0.02) 1px,
+            transparent 1px
+        ),
+        linear-gradient(
+            90deg,
+            rgba(255,255,255,0.02) 1px,
+            transparent 1px
+        );
+
+    background-size:40px 40px;
+    opacity:0.3;
+}
+
+/* PROJECT CARDS */
+
+.project-card{
+    border:1px solid rgba(255,255,255,0.06);
+    transition:
+        transform 0.5s ease,
+        border-color 0.5s ease,
+        box-shadow 0.5s ease;
+}
+
+.project-card:hover{
+    transform:translateY(-10px);
+    border-color:rgba(255,255,255,0.18);
+
+    box-shadow:
+        0 20px 60px rgba(0,0,0,0.4);
+}
+
+.project-card::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:linear-gradient(
+        to top,
+        rgba(0,0,0,0.35),
+        transparent
+    );
+
+    pointer-events:none;
+}
+
+/* PROJECT INFO */
+
+.project-info{
+    border-radius:18px;
+}
+
+.project-info h4{
+    transition:0.3s ease;
+}
+
+.project-card:hover .project-info h4{
+    transform:translateX(4px);
+}
+
+/* ABOUT PREVIEW */
+
+.about-preview{
+    position:relative;
+    overflow:hidden;
+}
+
+.about-preview::before{
+    content:"";
+    position:absolute;
+    width:500px;
+    height:500px;
+    border-radius:50%;
+    background:rgba(255,255,255,0.02);
+    filter:blur(120px);
+
+    bottom:-200px;
+    left:-150px;
+}
+
+.about-preview p{
+    position:relative;
+    z-index:2;
+}
+
+/* TEXT LINK */
+
+.text-link{
+    position:relative;
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    font-weight:500;
+}
+
+.text-link::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-6px;
+    width:0%;
+    height:1px;
+    background:white;
+    transition:0.35s ease;
+}
+
+.text-link:hover::after{
+    width:100%;
+}
+
+/* SECTION HEADINGS */
+
+.section-heading h3{
+    letter-spacing:-1px;
+}
+
+/* MICRO INTERACTIONS */
+
+.sidebar-section a{
+    position:relative;
+}
+
+.sidebar-section a::before{
+    content:"";
+    position:absolute;
+    left:-14px;
+    top:50%;
+    transform:translateY(-50%);
+    width:0;
+    height:1px;
+    background:white;
+    transition:0.3s ease;
+}
+
+.sidebar-section a:hover::before{
+    width:8px;
+}
+
+/* SCROLLBAR */
+
+.content::-webkit-scrollbar{
+    width:10px;
+}
+
+.content::-webkit-scrollbar-track{
+    background:#0b0b0b;
+}
+
+.content::-webkit-scrollbar-thumb{
+    background:#222;
+    border-radius:999px;
+}
+
+.content::-webkit-scrollbar-thumb:hover{
+    background:#333;
+}
+
+/* ANIMATIONS */
+
+@keyframes fadeUp{
+
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+/* RESPONSIVE */
+
+@media(max-width:1000px){
+
+    .hero-content h2{
+        font-size:3.2rem;
+    }
+
+    .project-card{
+        height:420px;
+    }
+
+}
+
+@media(max-width:700px){
+
+    .hero{
+        height:90vh;
+    }
+
+    .hero-content{
+        left:24px;
+        right:24px;
+        bottom:40px;
+    }
+
+    .hero-content h2{
+        font-size:2.5rem;
+        line-height:1.05;
+    }
+
+    .hero-content p{
+        font-size:1rem;
+        line-height:1.8;
+    }
+
+    .hero-label{
+        font-size:0.7rem;
+    }
+
+    .project-info{
+        padding:22px;
+    }
+
+    .project-info h4{
+        font-size:1.5rem;
+    }
+
+}

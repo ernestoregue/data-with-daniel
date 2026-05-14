@@ -1,0 +1,71 @@
+/* =========================
+   KRANNICH SOLAR THEME
+========================= */
+
+:root{
+    --next-green:#ADEBB3;
+}
+
+/* HERO OVERLAY */
+
+.page-hero-overlay{
+    background:linear-gradient(
+        to top,
+        rgba(0,0,0,0.85),
+        rgba(173, 235, 179, 0.12)
+    );
+}
+
+/* SECTION LABELS */
+
+.section-heading span{
+    color:var(--next-green);
+    opacity:1;
+}
+
+/* SIDEBAR ACTIVE LINK */
+
+.sidebar-section a:hover{
+    color:var(--next-green);
+}
+
+/* PROJECT INFO */
+
+.project-info{
+    border:1px solid rgba(173, 235, 179, 0.25);
+}
+
+.project-info span{
+    color:var(--next-green);
+    opacity:1;
+}
+
+/* TIMELINE */
+
+.timeline-item{
+    border-left:2px solid rgba(173, 235, 179, 0.4);
+}
+
+/* SKILLS */
+
+.skill-card{
+    border:1px solid rgba(173, 235, 179, 0.15);
+}
+
+.skill-card:hover{
+    border-color:var(--next-green);
+    transform:translateY(-5px);
+}
+
+/* TEXT LINKS */
+
+.sidebar-footer a:hover{
+    color:var(--next-green);
+}
+
+/* SELECTION */
+
+::selection{
+    background:var(--next-green);
+    color:black;
+}
