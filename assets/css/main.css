@@ -53,6 +53,8 @@ img{
     padding:40px 28px;
     position:fixed;
     top:0;
+    bottom: 0;
+    overflow-y: auto;
     left:0;
 
     display:flex;
@@ -92,6 +94,10 @@ img{
 .sidebar-section a:hover{
     opacity:1;
     transform:translateX(5px);
+}
+
+.sidebar-section details summary + a{
+    margin-top:8px;
 }
 
 .sidebar-footer a{
@@ -405,6 +411,31 @@ img{
     border-color:rgba(255,255,255,0.2);
 }
 
+/* PROJECTS GRID */
+.projects-grid{
+    display:grid;
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:30px;
+}
+
+.projects-grid .project-card{
+    height:420px;
+    margin-bottom:0;
+}
+
+.projects-grid .project-info{
+    left:30px;
+    right:30px;
+    bottom:30px;
+    max-width:none;
+    padding:22px;
+}
+
+.projects-grid .project-info h4{
+    font-size:1.7rem;
+    line-height:1.15;
+}
+
 /* =========================
    RESPONSIVE
 ========================= */
@@ -544,4 +575,40 @@ img{
         padding-top:72px;
     }
 
+        /* PROJECTS MOBILE */
+    .projects-grid{
+        grid-template-columns:1fr;
+        gap:20px;
+    }
+
+    .projects-grid .project-card{
+        height:280px;
+        margin-bottom:0;
+        border-radius:14px;
+    }
+
+    .projects-grid .project-info{
+        left:14px;
+        right:14px;
+        bottom:14px;
+        padding:14px 16px;
+    }
+
+    .projects-grid .project-info span{
+        font-size:0.6rem;
+        letter-spacing:1px;
+        margin-bottom:6px;
+    }
+
+    .projects-grid .project-info h4{
+        font-size:1.05rem;
+        line-height:1.2;
+        margin-bottom:6px;
+    }
+
+    .projects-grid .project-info p{
+        font-size:0.72rem;
+        line-height:1.4;
+        margin-bottom:0;
+    }
 }

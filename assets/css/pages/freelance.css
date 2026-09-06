@@ -1,0 +1,103 @@
+/* =========================
+
+   FREELANCING & SELF IMPROVEMENT THEME
+
+========================= */
+
+:root{
+
+    --freelance-blue:#3b82f6;
+
+}
+
+/* HERO OVERLAY */
+
+.page-hero-overlay{
+
+    background:linear-gradient(
+
+        to top,
+
+        rgba(0,0,0,0.85),
+
+        rgba(59,130,246,0.12)
+
+    );
+
+}
+
+/* SECTION LABELS */
+
+.section-heading span{
+
+    color:var(--freelance-blue);
+
+    opacity:1;
+
+}
+
+/* SIDEBAR ACTIVE LINK */
+
+.sidebar-section a:hover{
+
+    color:var(--freelance-blue);
+
+}
+
+/* PROJECT INFO */
+
+.project-info{
+
+    border:1px solid rgba(59,130,246,0.25);
+
+}
+
+.project-info span{
+
+    color:var(--freelance-blue);
+
+    opacity:1;
+
+}
+
+/* TIMELINE */
+
+.timeline-item{
+
+    border-left:2px solid rgba(59,130,246,0.4);
+
+}
+
+/* SKILLS */
+
+.skill-card{
+
+    border:1px solid rgba(59,130,246,0.15);
+
+}
+
+.skill-card:hover{
+
+    border-color:var(--freelance-blue);
+
+    transform:translateY(-5px);
+
+}
+
+/* TEXT LINKS */
+
+.sidebar-footer a:hover{
+
+    color:var(--freelance-blue);
+
+}
+
+/* SELECTION */
+
+::selection{
+
+    background:var(--freelance-blue);
+
+    color:white;
+
+}
