@@ -1,5 +1,13 @@
 document.addEventListener("DOMContentLoaded", () => {
 
+    // Detectar automáticamente la raíz del sitio
+    const path = window.location.pathname;
+
+    const BASE_PATH = path.includes("/data-with-daniel/")
+        ? "/data-with-daniel/"
+        : "/";
+
+
     const navigation = `
 
         <!-- MOBILE NAV -->
@@ -7,9 +15,9 @@ document.addEventListener("DOMContentLoaded", () => {
         <header class="mobile-nav">
 
             <h1>
-            <a href="/index.html">
-                Daniel Núñez
-            </a>
+                <a href="${BASE_PATH}index.html">
+                    Daniel Núñez
+                </a>
             </h1>
 
             <button id="menu-toggle">
@@ -26,9 +34,11 @@ document.addEventListener("DOMContentLoaded", () => {
             <div>
 
                 <h1 class="logo">
-                    <a href="./index.html"> Daniel Núñez
+                    <a href="${BASE_PATH}index.html">
+                        Daniel Núñez
                     </a>
                 </h1>
+
 
                 <!-- MAIN NAV -->
 
@@ -36,12 +46,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
                     <h2>Navigation</h2>
 
-                    <a href="./index.html">Home</a>
-                    <a href="./about.html">About</a>
-                    <a href="./projects.html">Projects</a>
-                    <a href="./contact.html">Contact</a>
+                    <a href="${BASE_PATH}index.html">Home</a>
+                    <a href="${BASE_PATH}about.html">About</a>
+                    <a href="${BASE_PATH}projects.html">Projects</a>
+                    <a href="${BASE_PATH}contact.html">Contact</a>
 
                 </nav>
+
 
                 <!-- EXPERIENCE -->
 
@@ -49,19 +60,20 @@ document.addEventListener("DOMContentLoaded", () => {
 
                     <h2>Experience</h2>
 
-                    <a href="./experience/krannich-solar.html">
+                    <a href="${BASE_PATH}experience/krannich-solar.html">
                         Krannich Solar México
                     </a>
 
-                    <a href="./experience/freelance.html">
+                    <a href="${BASE_PATH}experience/freelance.html">
                         Freelancing
                     </a>
 
-                    <a href="./experience/next-move.html">
+                    <a href="${BASE_PATH}experience/next-move.html">
                         Next move
                     </a>
 
                 </nav>
+
 
                 <!-- EDUCATION, CERTIFICATIONS & COURSES -->
 
@@ -70,6 +82,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     <h2>Credentials</h2>
 
                     <details>
+
                         <summary>Education</summary>
 
                         <a href="https://www.escom.ipn.mx/" target="_blank">
@@ -78,10 +91,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
                     </details>
 
+
                     <details>
+
                         <summary>Certifications</summary>
 
-                        <a href="/assets/documents/AZ-900_Certificate.pdf" target="_blank">
+                        <a href="${BASE_PATH}assets/documents/AZ-900_Certificate.pdf" target="_blank">
                             AZ-900: Microsoft Azure Fundamentals
                         </a>
 
@@ -89,13 +104,15 @@ document.addEventListener("DOMContentLoaded", () => {
                             EF SET
                         </a>
 
-                        <a href="./" target="_blank">
+                        <a href="${BASE_PATH}" target="_blank">
                             AI-103
                         </a>
 
                     </details>
 
+
                     <details>
+
                         <summary>Courses</summary>
 
                         <a href="https://app.educasign.ai/validation/d763738c-486c-4e0c-a6cb-ba794ced304d" target="_blank">
@@ -122,13 +139,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 </nav>
 
+
                 <!-- CV -->
 
                 <nav class="sidebar-section">
 
                     <h2>CV</h2>
 
-                    <a href="./assets/documents/CV_DANIEL.pdf" target="_blank">
+                    <a href="${BASE_PATH}assets/documents/CV_DANIEL.pdf" target="_blank">
                         Download CV
                     </a>
 
