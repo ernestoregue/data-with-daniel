@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
             <div>
 
                 <h1 class="logo">
-                    <a href="/index.html"> Daniel Núñez
+                    <a href="./index.html"> Daniel Núñez
                     </a>
                 </h1>
 
@@ -36,10 +36,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
                     <h2>Navigation</h2>
 
-                    <a href="/index.html">Home</a>
-                    <a href="/about.html">About</a>
-                    <a href="/projects.html">Projects</a>
-                    <a href="/contact.html">Contact</a>
+                    <a href="./index.html">Home</a>
+                    <a href="./about.html">About</a>
+                    <a href="./projects.html">Projects</a>
+                    <a href="./contact.html">Contact</a>
 
                 </nav>
 
@@ -49,15 +49,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
                     <h2>Experience</h2>
 
-                    <a href="/experience/krannich-solar.html">
+                    <a href="./experience/krannich-solar.html">
                         Krannich Solar México
                     </a>
 
-                    <a href="/experience/freelance.html">
+                    <a href="./experience/freelance.html">
                         Freelancing
                     </a>
 
-                    <a href="/experience/next-move.html">
+                    <a href="./experience/next-move.html">
                         Next move
                     </a>
 
@@ -128,7 +128,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
                     <h2>CV</h2>
 
-                    <a href="/assets/documents/CV_DANIEL.pdf" target="_blank">
+                    <a href="./assets/documents/CV_DANIEL.pdf" target="_blank">
                         Download CV
                     </a>
 
